@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webforms</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/c1.css')}}">
+</head>
+<body>
+    <center>
+        <h1>webforms</h1>
+
+        <form method="POST" style="color: rgb(55, 226, 43);">
+
+            {{NFO.First_name.label}}:-{{NFO.First_name}} <br><br>
+            {{NFO.Last_name.label}}:-{{NFO.Last_name}} <br><br>
+            {{NFO.password.label}}:-{{NFO.password}} <br><br>
+
+                        {{NFO.submit}}
+
+        </form>
+
+    </center>
+</body>
+</html>
